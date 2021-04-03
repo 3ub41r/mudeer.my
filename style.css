@@ -1,0 +1,8 @@
+.clouds {
+    background-image: url(images/clouds.jpg);
+    background-position: center bottom -150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-color: #0ea8da;
+}
