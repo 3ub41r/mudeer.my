@@ -23,7 +23,7 @@
                 </h1>
 
                 <h2 class="my-3 h3">
-                    Uruskan invois dan kutipan yuran secara online dengan mudah. 
+                    Mudahkan urusan invois dan kutipan yuran <u id="text-rotate" class="font-weight-bold">pusat tuisyen</u> anda.
                 </h2>
             </div>
 
@@ -75,59 +75,59 @@
 
     <div class="py-5">
         <div class="container">
-            <h3 class="mb-5">Fungsi Mudeer</h3>
+            <h3 class="mb-5 font-weight-bold text-muted text-uppercase text-center">Features Mudeer</h3>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="images/flat-color-icons/bar_chart.svg" alt="Tingkatkan Kualiti Pengajaran" class="img-fluid mb-4">
-                </div>
+            <div class="row my-5">
                 <div class="col">
                     <h5 class="font-weight-bold mb-3">Penawaran dan Pendaftaran Kursus</h5>
                     <p>
                         Para peserta dapat mendaftar sendiri kursus yang anda tawarkan secara online.
                     </p>
                 </div>
+                <div class="col-md-6 order-md-first">
+                    <img src="images/screenshots/Registration.png" alt="Penawaran dan Pendaftaran Kursus" class="img-fluid">
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="images/flat-color-icons/bar_chart.svg" alt="Tingkatkan Kualiti Pengajaran" class="img-fluid mb-4">
-                </div>
+            <div class="row my-5">
                 <div class="col">
                     <h5 class="font-weight-bold mb-3">Rekod Kedatangan Peserta</h5>
                     <p>
                         Mudeer dapat memudahkan anda mencapai senarai peserta dan merekodkan kedatangan.
                     </p>
                 </div>
+                <div class="col-md-6">
+                    <img src="images/screenshots/Attendance.png" alt="Rekod Kedatangan Peserta" class="img-fluid">
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="images/flat-color-icons/bar_chart.svg" alt="Tingkatkan Kualiti Pengajaran" class="img-fluid mb-4">
-                </div>
+            <div class="row my-5">
                 <div class="col">
                     <h5 class="font-weight-bold mb-3">Penjanaan dan Pembayaran Yuran</h5>
                     <p>
                         Invois yuran akan dijana secara automatik dan peringatan akan dihantar kepada setiap peserta.
                     </p>
                 </div>
+                <div class="col-md-6 order-md-first">
+                    <img src="images/screenshots/Payment.png" alt="Penjanaan dan Pembayaran Yuran" class="img-fluid">
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="images/flat-color-icons/bar_chart.svg" alt="Tingkatkan Kualiti Pengajaran" class="img-fluid mb-4">
-                </div>
+            <div class="row my-5">
                 <div class="col-md-4">
                     <h5 class="font-weight-bold mb-3">Penjanaan Laporan</h5>
                     <p>
                         Laporan peserta, serta pembayaran tertunggak yang mudah dicapai memudahkan anda membuat pemantauan.
                     </p>
                 </div>
+                <div class="col-md-6">
+                    <img src="images/screenshots/Dashboard.png" alt="Penjanaan Laporan" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="py-5">
+    <div class="py-5 bg-light">
         <div class="container">
             <div class="text-center my-3">
                 <p class="font-weight-bold">
@@ -136,6 +136,9 @@
                 
                 <a href="#" class="btn btn-warning btn-lg shadow text-uppercase my-3">
                     Daftar Sekarang
+                </a>
+                <a href="http://wa.me/60177165025" class="btn btn-lg btn-link">
+                    <i class="fab fa-whatsapp"></i> Hubungi Saya
                 </a>
             </div>
         </div>
@@ -163,5 +166,22 @@
         </div>
     </footer>
     <a class="text-white d-none" href='https://www.freepik.com/vectors/background'>Background vector created by starline - www.freepik.com</a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            var prospects = [
+                'pusat tuisyen',
+                'tadika',
+                'akademi',
+                'pusat latihan'
+            ];
+
+            setInterval(function () { 
+                var text = prospects[Math.floor(Math.random() * prospects.length)];
+                $('#text-rotate').text(text);
+            }, 2000);
+        })
+    </script>
 </body>
 </html>
