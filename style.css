@@ -1,3 +1,8 @@
+body {
+    background-color: #f2f9ff;
+    color: #003B73;
+}
+
 .clouds {
     background-image: url(images/clouds.jpg);
     background-position: center bottom -150px;
