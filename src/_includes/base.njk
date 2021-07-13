@@ -33,30 +33,16 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                {# <ul class="navbar-nav mr-auto">
-                    {% for p in collections.pages %}
-                    <li class="nav-item{% if page.url == p.url %} active{% endif %}">
-                        <a class="nav-link" href="{{ p.url }}">{{ p.data.title }}</a>
-                    </li>
-                    {%- endfor  %}
-                </ul> #}
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item{% if page.url == '/cara-guna/' %} active{% endif %}">
-                        <a class="nav-link" href="/cara-guna">Cara Guna</a>
+                    <li class="nav-item{% if page.url == '/pusat-tuisyen/' %} active{% endif %}">
+                        <a class="nav-link" href="/pusat-tuisyen">Pusat Tuisyen</a>
                     </li>
                 </ul>
                 <a href="https://app.mudeer.my/register" class="btn btn-warning font-weight-bold shadow-sm">
                     Cuba MUDEER
                 </a>
-                {# <a href="https://t.me/joinchat/-dyt1oSF6jQwNWI9" class="btn btn-primary font-weight-bold shadow-sm">
-                    <i class="fab fa-telegram mr-1"></i> Join Telegram
-                </a> #}
             </div>
-            {# <a href="https://app.mudeer.my/register" class="btn btn-warning font-weight-bold shadow-sm">
-                Cuba MUDEER
-            </a> #}
         </div>
     </nav>
     {{ content | safe }}
