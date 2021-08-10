@@ -33,16 +33,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item{% if page.url == '/pusat-tuisyen/' %} active{% endif %}">
-                        <a class="nav-link" href="/pusat-tuisyen">Pusat Tuisyen</a>
-                    </li>
-                </ul>
-                <a href="https://app.mudeer.my/register" class="btn btn-warning font-weight-bold shadow-sm">
-                    Cuba MUDEER
-                </a>
-            </div>
+            <a href="https://app.mudeer.my/register" class="btn btn-warning font-weight-bold shadow-sm">
+                Cuba MUDEER
+            </a>
         </div>
     </nav>
     {{ content | safe }}
