@@ -3,80 +3,61 @@ layout: page.njk
 title: Cara Guna Mudeer
 ---
 
-Assalamu’alaikum.
+Himpunan video panduan penggunaan Mudeer. Semoga bermanfaat. Syukran.
 
-Mudeer adalah sebuah sistem pengurusan pusat pengajian yang akan membantu anda memantau yuran dan kehadiran pelajar anda.
+#### 1. Apa Itu Course, Class dan Session?
 
-Mudeer tidak perlu *di-install* dan boleh dicapai secara online daripada mana-mana menggunakan laptop, tablet mahupun telefon.
+Penerangan tentang Kursus, Kelas dan Sesi dalam Mudeer.
 
-Mudeer membolehkan anda: 
+[https://youtu.be/E3Wieirxg5Q](https://youtu.be/E3Wieirxg5Q)
 
-- Terima pendaftaran secara online
-- Rekodkan bayaran online pelajar
-- Jana invois secara automatik
-- Pantau tunggakan yuran dan banyak lagi
 
-Mula-mula anda perlu pergi ke [https://app.mudeer.my/register](https://app.mudeer.my/register) untuk cipta akaun baru. Anda perlu masukkan:
+#### 2. Jenis Yuran
 
-- Nama anda
-- Nama organisasi anda
-- Nombor telefon organisasi
-- Alamat emel serta 
-- Katalaluan untuk anda login nanti
+Mudeer akan bantu anda jana invois secara automatik. Dalam video ini saya terangkan tiga jenis yuran yang ada.
 
-<img src="/images/cara-guna/register.png" alt="Register" class="img-fluid mb-4 border border-dark rounded" />
+[https://youtu.be/M7Ooyp2PPcg](https://youtu.be/M7Ooyp2PPcg)
 
-Selepas anda mendaftar, anda perlu tambahkan kursus. Anda boleh klik pada menu **“Courses”** dan klik pada menu **“New”**.
+#### 3. Hantar Invois dan Resit Melalui Telegram
 
-Terdapat dua jenis kursus:
+Mudeer akan menghantar notifikasi melalui Telegram setiap kali invois dijana. 
 
-- Kursus berkumpulan (Group) dan
-- Kursus individu (Individual)
+[https://youtu.be/T_5r9VQqrDI](https://youtu.be/T_5r9VQqrDI)
 
-<img src="/images/cara-guna/courses.png" alt="Courses" class="img-fluid mb-4 border border-dark rounded" />
+#### 4. Bagaimana Kalau Ada Yuran Pelajar Berbeza
 
-Kita akan tambah kursus berkumpulan. Anda perlu masukkan nama kursus anda, keterangan jika ada, tempoh jika ada dan yuran kursus tersebut. Anda boleh masukkan yuran secara *one-off* atau anda boleh minta Mudeer untuk jana invois setiap bulan.
+Dalam video ini saya tunjukkan bagaimana kalau ada yuran pelajar berbeza dengan pelajar lain.
 
-Jika anda ingin Mudeer janakan invois setiap bulan, anda perlu tick pada kotak **“Every month”**. Anda juga boleh tentukan supaya invois dikeluarkan pada bulan sebelumnya. Invois akan dikeluarkan pada tarikh yang telah ditetapkan.
+[https://youtu.be/2mX_5K-rHNE](https://youtu.be/2mX_5K-rHNE)
 
-<img src="/images/cara-guna/course-fees.png" alt="Course Fees" class="img-fluid mb-4 border border-dark rounded" />
+#### 5. Bagaimana Kalau Guru Lupa Punch Out?
 
-Setelah anda selesai menambah kursus. Anda boleh buka kelas. Pergi pada tab **“Classes”** dan klik pada butang **“New Class”**. Anda perlu masukkan: 
+Dalam video ini saya terangkan bagaimana kalau guru lupa nak rekodkan tamatnya kelas.
 
-- Tajuk kelas tersebut
-- Guru yang akan mengajar
-- Bila kursus akan bermula
-- Keterangan, jika ada dan
-- Jadual kelas, jika ada
+[https://youtu.be/3wslsw6khVg](https://youtu.be/3wslsw6khVg)
 
-<img src="/images/cara-guna/new-class.png" alt="New Class" class="img-fluid mb-4 border border-dark rounded" />
+#### 6. Jana Invois Ikut Bilangan Kelas Setiap Bulan
 
-Setelah anda selesai membuka kelas, anda boleh mula terima pendaftaran online. Kongsikan link kepada **“Registration Page”** dengan bakal pelajar anda. Link ini juga boleh diletakkan pada bahan-bahan marketing anda.
+Dalam video ni saya terangkan sikit tentang prorate supaya yuran yang dikenakan kepada pelajar sesuai dengan bilangan kelas bulan tu.
 
-<img src="/images/cara-guna/class-registration.png" alt="Class Registration" class="img-fluid mb-4 border border-dark rounded" />
+[https://youtu.be/cZjhFhb_5uc](https://youtu.be/cZjhFhb_5uc)
 
-Capaian link ini akan membawa bakal pelajar anda ke **“Registration Page”**. Mereka boleh melihat butiran kursus dan tekan pada butang **“Register”** untuk mendaftar. Kemudian mereka perlu memasukkan No. KP atau Passport mereka untuk mendaftar. Beberapa butiran lain juga perlu diisi.
+#### 7. Laporan: Yuran Belum Dibayar
 
-<img src="/images/cara-guna/registration-page.png" alt="Registration Page" class="img-fluid mb-4 border border-dark rounded" />
+Dalam video ini saya perkenalkan laporan: Unpaid Fees. Melalui laporan ini anda dapat semak yuran yang belum dibayar mengikut kelas dan terus follow up dengan pelajar.
 
-Kemudian mereka boleh klik pada **“Confirm”** untuk mengesahkan pendaftaran. Invois akan dijana, dan pelajar tersebut boleh terus membuat bayaran secara online.
+[https://youtu.be/Ova3QtTUysA](https://youtu.be/Ova3QtTUysA)
 
-<img src="/images/cara-guna/invoice.png" alt="Invoice" class="img-fluid mb-4 border border-dark rounded" />
+#### 8. Peranan Guru dalam Mudeer
 
-Di paparan dashboard anda pula, anda akan dapati terdapat pendaftaran baru. Anda boleh klik pada **“View All”** untuk melihat senarai pelajar yang baru mendaftar. Anda perlu mengesahkan pelajar sebelum mereka boleh masuk ke kelas. Di sini juga anda akan dapat lihat samada pelajar tesebut telah membuat bayaran atau tidak.
+Dalam video ini saya terangkan peranan guru dan Mudeer. Anda boleh kongsikan dengan guru-guru anda sebagai panduan.
 
-Anda boleh terima bayaran pelajar atau klik pada butang **“Approve”** untuk mengesahkan pendaftaran pelajar tersebut.
+[https://youtu.be/LaUUxCDGouA](https://youtu.be/LaUUxCDGouA)
 
-<img src="/images/cara-guna/approve-student.png" alt="Approve Student" class="img-fluid mb-4 border border-dark rounded" />
+#### 9. Masalah Kelas Bermula di Pertengahan Bulan
 
-Setelah anda mengesahkan pelajar-pelajar anda, anda boleh mula rekodkan kehadiran mereka. Kehadiran pelajar akan direkodkan oleh guru. 
+Mudeer menjana invois secara automatik tanpa anda perlu buat apa-apa. Namun kadang kala anda perlu jana invois secara manual. Keadaan biasa yang memerlukan anda jana invois secara manual adalah apabila kelas bermula di pertengahan bulan. 
 
-Ini adalah paparan guru. Guru perlu pergi ke kelas yang berkenaan dan memulakan sesi baru sebelum merekodkan kehadiran pelajar. Guru boleh tandakan pelajar yang hadir dan juga memasukkan nota pembelajaran yang berkaitan.
+Dalam video ini saya terangkan sedikit tentang cara invois dalam Mudeer bagi kelas-kelas yang bermula di pertengahan bulan.
 
-Guru perlu menekan butang **“End Session”** untuk menamatkan sesi kelas tersebut. Ini boleh membantu anda tentukan jumlah jam pengajaran guru setiap bulan.
-
-<img src="/images/cara-guna/attendance.png" alt="Attendance" class="img-fluid mb-4 border border-dark rounded" />
-
-Dengan ini saya berharap anda dapat mula gunakan Mudeer untuk menguruskan pusat pengajian anda. Ini adalah sebahagian sahaja daripada fungsi. Terdapat fungsi-fungsi lain yang boleh membantu anda jalankan pusat pengajian anda dengan lebih baik.
-
-Syukran.
+[https://youtu.be/F2suP7uYJX4](https://youtu.be/F2suP7uYJX4)
