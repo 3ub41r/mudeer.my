@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/71467b5fc2.js" crossorigin="anonymous"></script>
-    <title>{{ title }}</title>
+    <title>
+        {% if title %}
+            {{ title }} - 
+        {% endif %}
+        Mudeer
+    </title>
+
+    <meta name="description" content="{{ description if description else "MUDEER memudahkan pusat pengajian kutip yuran pelajar dan bayar elaun guru." }}">
+    <link rel="canonical" href="https://mudeer.my/">
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -45,6 +53,15 @@
     <footer class="border-top py-4">
         <div class="container">
             <div class="text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/cara-guna">Cara Guna</a>
+                    </li>
+                </ul>
+
                 <p class="mb-2">
                     Dibangunkan dengan penuh ❤️ oleh <a class="text-muted" href="https://tulisankod.my/">3ub41r</a>
                 </p>

@@ -1,6 +1,7 @@
 ---
 layout: page.njk
 title: Cara Guna Mudeer
+description: Himpunan video panduan penggunaan Mudeer. Semoga bermanfaat. Syukran.
 ---
 
 Himpunan video panduan penggunaan Mudeer. Semoga bermanfaat. Syukran.
