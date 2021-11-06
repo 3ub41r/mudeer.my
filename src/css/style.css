@@ -68,3 +68,7 @@ article h2, article h3, article h4, article h5, article h6 {
 h5.feature-header {
     line-height: 1.85rem;
 }
+
+.testimonial-logo {
+    width: 75px;
+}
