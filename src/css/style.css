@@ -72,3 +72,7 @@ h5.feature-header {
 .testimonial-logo {
     width: 75px;
 }
+
+.stats-box strong {
+    text-decoration: underline;
+}

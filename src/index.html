@@ -94,9 +94,9 @@
                 <footer class="blockquote-footer text-white-50">Ustazah Fadzilla <cite title="SoPaN">Daar As-Sofwah</cite></footer>
             </blockquote>
 
-            <h4 class="h3 mt-5 py-4 text-white font-weight-bold" style="line-height: 2.5rem;">
-                MUDEER sudah membantu pusat pengajian <u>kutip yuran</u> untuk <strong id="studentsCount">2,000</strong> orang pelajar dan jalankan <strong id="sessionsCount">4,000</strong> <u>kelas</u>.
-            </h4>
+            <h3 class="h1 mt-5 py-4 text-white stats-box" style="line-height: 3.2rem;">
+                MUDEER sudah membantu pusat pengajian kutip yuran sebanyak <strong id="totalCollection">RM400,000</strong> untuk <strong id="studentsCount">2,000</strong> orang pelajar dan jalankan <strong id="sessionsCount">4,000</strong> kelas.
+            </h3>
         </div>
     </div>
 
@@ -265,6 +265,7 @@
                     console.log(data);
                     $('#studentsCount').text(data.studentsCount.toLocaleString('en-US'));
                     $('#sessionsCount').text(data.sessionsCount.toLocaleString('en-US'));
+                    $('#totalCollection').text('RM' + data.totalCollection.toLocaleString('en-US'));
                 });
         })
     </script>
