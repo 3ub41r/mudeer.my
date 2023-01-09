@@ -170,7 +170,7 @@
             </blockquote>
 
             <h3 class="mt-5 py-4 text-white stats-box font-weight-bold h1" style="line-height: 2.9rem;">
-                MUDEER telah membantu pusat pengajian jalankan <strong id="sessionsCount">4,000</strong> kelas untuk <strong id="studentsCount">2,000</strong> orang pelajar.
+                MUDEER telah menyokong pusat pengajian membantu <strong id="teachersCount">800</strong> orang guru mengajar <strong id="sessionsCount">4,000</strong> kelas.
             </h3>
         </div>
     </div>
@@ -492,9 +492,8 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    $('#studentsCount').text(data.studentsCount.toLocaleString('en-US'));
+                    $('#teachersCount').text(data.teachersCount.toLocaleString('en-US'));
                     $('#sessionsCount').text(data.sessionsCount.toLocaleString('en-US'));
-                    $('#totalCollection').text('RM' + data.totalCollection.toLocaleString('en-US'));
                 });
         })
     </script>
