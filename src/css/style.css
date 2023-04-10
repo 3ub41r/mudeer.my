@@ -76,3 +76,11 @@ h5.feature-header {
 .stats-box strong {
     text-decoration: underline;
 }
+
+.blockquote p {
+    line-height: 2.1rem;
+}
+
+.stats-box {
+    line-height: 3.5rem;
+}
