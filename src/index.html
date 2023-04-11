@@ -87,9 +87,29 @@
                         <i class="fab fa-whatsapp mr-1"></i> WhatsApp saya untuk cuba
                     </a>
 
-                    <a href="https://t.me/joinchat/UXy2pWyuUQA0NGRl" class="btn btn-link btn-lg text-white my-3 font-weight-bold text-nowrap" style="text-decoration: underline;">
-                        <i class="fab fa-telegram-plane mr-1"></i> Join group Telegram kami <i class="fas fa-long-arrow-right ml-1"></i>
-                    </a>
+                    <!-- Demo modal -->
+                    <button type="button" data-toggle="modal" data-target="#demoModal" class="btn btn-link btn-lg text-white my-3 font-weight-bold text-nowrap">
+                        <i class="fas fa-play-circle"></i> Tonton demo
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-truncate" id="demoModalLabel">[Video] Bagaimana Mudeer Boleh Membantu Anda</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v6wib-3LJ6g" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -342,37 +362,52 @@
     </div>
 
     <div id="harga" class="py-4 bg-white shadow-sm">
-        <div class="container text-center">
-            <h3 class="text-center my-4 font-weight-bold">
-                Bayar untuk pelajar <u>AKTIF</u> sahaja
-            </h3>
-            
-            <div class="my-5">
-                <div>
-                    <div class="d-flex align-items-center justify-content-center my-3">
-                        <h4 class="h1 font-weight-bold mr-2">
-                            RM2
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="my-5">
+                        <div class="mb-5">
+                            <h3 class="font-weight-bold mb-4">
+                                Bayar untuk pelajar AKTIF sahaja
+                            </h3>
+    
+                            <div class="card bg-light shadow-sm my-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <h6 class="text-muted mr-1">RM</h6>
+                                        <h3 class="h1 font-weight-bold">2</h3>
+                                        <h5 class="ml-2">/ bulan</h5>
+                                    </div>
+                                    <span>untuk setiap pelajar aktif</span>
+
+                                    <h5 class="h1 my-4">+</h5>
+                                    <h6>
+                                        Yuran pendaftaran, <strong>RM200</strong> (sekali sahaja)
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-5">
+                        
+                        <h4 class="font-weight-bold mb-4">
+                            <i class="fad fa-calculator-alt mr-1"></i>
+                            Kira kos untuk mudahkan kerja
                         </h4>
-                        <h5>/ bulan</h5>
+
+                        <div class="d-flex align-items-center my-4">
+                            <h6 class="text-muted mr-1">RM</h6>
+                            <h3 id="cost" class="h1 font-weight-bold">50</h3>
+                            <h5 class="ml-2">/ bulan</h5>
+                        </div>
+                        
+                        <div class="d-flex align-items-center">
+                            <input type="number" class="form-control form-control-lg shadow-sm" id="students" value="25">
+                            <span class="ml-3 text-nowrap">pelajar aktif</span>
+                        </div>
+                        <div class="text-muted my-3">(caj minima RM50)</div>
                     </div>
-                    <h5>setiap pelajar aktif</h5>
-
-                    <span class="text-muted my-3">(caj minima RM50)</span>
                 </div>
-                <h5 class="h1 text-center my-4">+</h5>
-                <h5 class="mb-4">
-                    Yuran pendaftaran, RM200 (sekali sahaja)
-                </h5>
-
-                <hr>
-                
-                <p class="text-muted mt-4">
-                    <strong>Contoh:</strong>
-                    <br>
-                    <strong>10</strong> orang pelajar aktif, yuran bulan tersebut adalah <strong>RM50</strong> (caj minima).
-                    <br>
-                    <strong>50</strong> orang aktif, yuran bulan tersebut adalah <strong>RM100</strong>.
-                </p>
             </div>
         </div>
     </div>
@@ -438,10 +473,10 @@
                 Harga Mudeer juga ditentukan oleh bilangan pelajar aktif sahaja dan tidak akan membebankan pusat pengajian yang masih kecil.
             </p>
             
-            <h5 class="font-weight-bold mb-3">Saya sibuk sikit la. Tak ada masa.</h5>
+            <h5 class="font-weight-bold mb-3">Saya sibuk. Tak ada masa.</h5>
 
             <p>
-                Awal-awal mungkin banyak sikit kerja, tapi lepas selesai <em>set up</em>, tak lagi sibuk macam dulu. Boleh fokus pada perkara lain.
+                Awal-awal ada sikit kerja masukkan data pelajar, guru dan sebagainya. Tapi selesai <em>set up</em>, <em>in sya Allah</em> tak lagi sibuk macam dulu. Boleh fokus pada benda lain.
             </p>
 
             <p>
@@ -461,7 +496,7 @@
             <h5 class="font-weight-bold mb-3">Macam mana saya tahu Mudeer tak jual data pelajar kami?</h5>
 
             <p>
-                Kami TIDAK AKAN menjual data pelajar anda. Kami amat memahami betapa pentingnya data pelajar anda.
+                Kami <u><strong>TIDAK AKAN</strong></u> menjual data pelajar anda. Kami amat memahami betapa pentingnya data pelajar anda.
             </p>
             
             <p>
@@ -499,6 +534,11 @@
                             <i class="fab fa-facebook-square"></i> Facebook
                         </a>
                     </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/@mudeerapp">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </a>
+                    </li>
                 </ul>
 
                 <p class="mb-2">
@@ -532,6 +572,16 @@
                     $('#teachersCount').text(data.teachersCount.toLocaleString('en-US'));
                     $('#sessionsCount').text(data.sessionsCount.toLocaleString('en-US'));
                 });
+
+            $('#students').on('keyup mouseup', function () {
+                const rate = 2;
+                const minimum = 50;
+                const students = $(this).val();
+                const cost = students * rate;
+                const payable = cost < minimum ? minimum : cost;
+
+                $('#cost').text(payable);
+            })
         })
     </script>
 </body>
