@@ -81,6 +81,12 @@ h5.feature-header {
     line-height: 2.1rem;
 }
 
+.pricing-testmonial p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+
+}
+
 .stats-box {
     line-height: 3.5rem;
 }
