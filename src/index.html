@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/71467b5fc2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>
         Mudeer
     </title>
@@ -354,6 +355,16 @@
                                     <h6>
                                         Yuran pendaftaran, <strong>RM200</strong> (sekali sahaja)
                                     </h6>
+
+                                    <hr>
+                                    <ul class="text-muted small mb-0 pl-3">
+                                        <li class="mb-2">
+                                            Yuran pendaftaran termasuk kos penggunaan bulan pertama dan akan <strong>dipulangkan</strong> jika anda rasa Mudeer tidak sesuai untuk anda selepas sebulan.
+                                        </li>
+                                        <li class="mb-2">
+                                            Terdapat <strong>caj minima RM50</strong> / sebulan yang akan dikenakan walaupun tiada pelajar aktif bulan tersebut.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -362,21 +373,32 @@
                         
                         <h4 class="font-weight-bold mb-4">
                             <i class="fad fa-calculator-alt mr-1"></i>
-                            Kira kos untuk mudahkan kerja
+                            Kira kos anda
                         </h4>
 
                         <div class="d-flex align-items-center my-4">
-                            <h6 class="text-muted mr-1">RM</h6>
-                            <h3 id="cost" class="h1 font-weight-bold">50</h3>
-                            <h5 class="ml-2">/ bulan</h5>
+                            <div class="d-flex align-items-center text-nowrap mr-2">
+                                <h5 class="my-0">
+                                    <span id="students-count">25</span>
+                                    <span> pelajar = </span>
+                                </h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <h6 class="text-muted mr-1">RM</h6>
+                                <h3 id="cost" class="h1 font-weight-bold">50</h3>
+                                <h5 class="ml-2">/ bulan</h5>
+                            </div>
                         </div>
                         
                         <div class="d-flex align-items-center">
-                            <input type="number" class="form-control form-control-lg shadow-sm" id="students" value="25">
-                            <img src="images/arrow.png" class="img-fluid mx-2" style="width: 3rem;">
+                            <input type="range" class="custom-range mr-2" id="students" value="25" min="1" max="500">
                             <strong class="text-nowrap">pelajar aktif</strong>
                         </div>
-                        <div class="text-muted my-3">(caj minima RM50)</div>
+
+                        <div class="d-flex align-items-start mt-2 animate__animated animate__headShake animate__slower animate__infinite">
+                            <img src="images/arrow.png" class="img-fluid mx-2" style="width: 1.8rem;">
+                            <span class="">guna slider</span>
+                        </div>
                     </div>
 
                     <div class="text-center my-4">
@@ -580,13 +602,14 @@
                     $('#sessionsCount').text(data.sessionsCount.toLocaleString('en-US'));
                 });
 
-            $('#students').on('keyup mouseup', function () {
+            $('#students').on('input change', function () {
                 const rate = 2;
                 const minimum = 50;
                 const students = $(this).val();
                 const cost = students * rate;
                 const payable = cost < minimum ? minimum : cost;
 
+                $('#students-count').text(students);
                 $('#cost').text(payable);
             })
         })
