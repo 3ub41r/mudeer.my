@@ -636,7 +636,7 @@
                 .then(data => {
                     console.log(data);
                     
-                    $('#collection').text(data.collection);
+                    $('#collection').text('RM' + data.collection);
                     $('#sessions-count').text(data.sessions_count);
                     $('#sessions-hours').text(data.sessions_duration);
                 });
