@@ -71,9 +71,12 @@
                 <a href="#harga" class="mx-2 mx-md-4 text-dark">
                     Harga
                 </a>
-                <a href="http://wa.me/60192539805" class="btn btn-success font-weight-bold shadow-sm">
-                    WhatsApp
+                <a href="https://t.me/mudeerappchannel" class="btn btn-primary font-weight-bold shadow-sm">
+                    Join Telegram
                 </a>
+                <!-- <a href="http://wa.me/60192539805" class="btn btn-success font-weight-bold shadow-sm">
+                    WhatsApp
+                </a> -->
             </div>            
         </div>
     </nav>
@@ -196,8 +199,16 @@
             </blockquote>
 
             <h3 class="mt-5 py-4 text-white stats-box font-weight-bold h1">
-                MUDEER telah menyokong pusat pengajian membantu <strong id="teachersCount">800</strong> orang guru mengajar <strong id="sessionsCount">4,000</strong> kelas.
+                Bulan lepas sahaja, MUDEER membantu:
             </h3>
+            <ul class="text-white list-unstyled">
+                <li class="mb-3 h4" style="line-height: 2.2rem;">
+                    💰 Kutip yuran sebanyak <strong id="collection">RM341,720.35</strong>.
+                </li>
+                <li class="mb-3 h4" style="line-height: 2.2rem;">
+                    👨‍🏫 Rekodkan <strong id="sessions-count">11,556</strong> sesi kelas selama <strong id="sessions-hours">8,696</strong> jam.
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -367,7 +378,7 @@
                                     </h6>
 
                                     <p class="font-weight-bold">
-                                        👆 100% Satu Bulan Money-back Guarantee
+                                        👆 100% PERCUMA kalau saya tak dapat bantu set up dalam masa sebulan.
                                     </p>
 
                                     <hr>
@@ -548,9 +559,16 @@
             </p>
 
             <div class="text-center mt-5">
-                <a href="http://wa.me/60192539805" class="btn btn-lg btn-success font-weight-bold shadow mb-3">
-                    <i class="fab fa-whatsapp mr-1"></i> Berminat? WhatsApp Saya
+                <h3 class="font-weight-bold mb-3">Masih belum bersedia?</h3>
+                <p>
+                    Join Telegram channel MUDEER untuk tips tentang bisnes pendidikan dan update berkenaan sistem.
+                </p>
+                <a href="https://t.me/mudeerappchannel" class="btn btn-lg btn-primary font-weight-bold shadow mb-3">                    
+                    <i class="fab fa-telegram mr-1"></i> Join Telegram
                 </a>
+                <!-- <a href="http://wa.me/60192539805" class="btn btn-lg btn-success font-weight-bold shadow mb-3">
+                    <i class="fab fa-whatsapp mr-1"></i> Berminat? WhatsApp Saya
+                </a> -->
             </div>
         </div>
     </div>
@@ -617,8 +635,10 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    $('#teachersCount').text(data.teachersCount.toLocaleString('en-US'));
-                    $('#sessionsCount').text(data.sessionsCount.toLocaleString('en-US'));
+                    
+                    $('#collection').text(data.collection);
+                    $('#sessions-count').text(data.sessions_count);
+                    $('#sessions-hours').text(data.sessions_duration);
                 });
 
             $('#students').on('input change', function () {
