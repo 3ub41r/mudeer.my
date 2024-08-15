@@ -11,6 +11,8 @@
     gtag('config', 'G-VE7P3N3WHY');
     </script>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -340,7 +342,20 @@
         </div>
     </div>
 
-    <div id="harga" class="py-4 bg-white shadow-sm">
+    <div
+        x-data='{
+            rate: 3,
+            minimumFee: 60,
+            minimumWage: 1500,
+            studentsCount: 20,
+            registrationFee: 400,
+            get cost() {
+                let cost = this.studentsCount * this.rate;
+                return (cost < this.minimumFee) ? this.minimumFee : cost;
+            }
+        }'
+        id="harga"
+        class="py-4 bg-white shadow-sm">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto">
@@ -354,14 +369,14 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
                                         <h6 class="text-muted mr-1">RM</h6>
-                                        <h3 id="per-student-rate" class="h1 font-weight-bold">3</h3>
+                                        <h3 class="h1 font-weight-bold" x-text="rate">3</h3>
                                         <h5 class="ml-2">/ bulan</h5>
                                     </div>
                                     <span>untuk setiap pelajar aktif</span>
 
                                     <h5 class="h1 my-4">+</h5>
                                     <h6>
-                                        Yuran pendaftaran, <strong>RM300</strong> (sekali sahaja)
+                                        Yuran pendaftaran, <strong>RM<span x-text="registrationFee">300</span></strong> (sekali sahaja)
                                     </h6>
 
                                     <p class="font-weight-bold">
@@ -375,7 +390,7 @@
                                             Yuran pendaftaran termasuk kos penggunaan bulan pertama dan akan <strong>dipulangkan</strong> jika anda rasa MUDEER tidak sesuai untuk anda selepas sebulan.
                                         </li>
                                         <li class="mb-2">
-                                            Terdapat <strong>caj minima RM<span id="minimum-charge">60</span></strong> / sebulan yang akan dikenakan walaupun tiada pelajar aktif bulan tersebut.
+                                            Terdapat <strong>caj minima RM<span x-text="minimumFee">60</span></strong> / sebulan yang akan dikenakan walaupun tiada pelajar aktif bulan tersebut.
                                         </li>
                                     </ul>
                                 </div>
@@ -392,19 +407,19 @@
                         <div class="d-flex align-items-center my-4">
                             <div class="d-flex align-items-center text-nowrap mr-2">
                                 <h5 class="my-0">
-                                    <span id="students-count">20</span>
+                                    <span x-text="studentsCount">20</span>
                                     <span> pelajar = </span>
                                 </h5>
                             </div>
                             <div class="d-flex align-items-center">
                                 <h6 class="text-muted mr-1">RM</h6>
-                                <h3 id="cost" class="h1 font-weight-bold">60</h3>
+                                <h3 class="h1 font-weight-bold" x-text="cost">60</h3>
                                 <h5 class="ml-2">/ bulan</h5>
                             </div>
                         </div>
                         
                         <div class="d-flex align-items-center">
-                            <input type="range" class="custom-range mr-2" id="students" value="25" min="1" max="500">
+                            <input type="range" class="custom-range mr-2" min="1" max="500" x-model="studentsCount">
                             <strong class="text-nowrap">pelajar aktif</strong>
                         </div>
 
@@ -412,6 +427,16 @@
                             <img src="images/arrow.png" class="img-fluid mx-2" style="width: 1.8rem;">
                             <span class="">guna slider</span>
                         </div>
+
+                        <div
+                            x-show.important="(minimumWage - cost) > 0"
+                            class="mt-4 d-flex align-items-center justify-content-center">
+                            <h3 class="my-0 mr-1">
+                                Jimat <strong x-text="'RM' + (minimumWage - cost)"></strong>
+                            </h3>
+                            <span> / <span x-text="minimumWage">1500</span> (gaji staf)</span>
+                        </div>
+
                     </div>
 
                     <div class="text-center my-4">
@@ -624,24 +649,6 @@
                     $('#sessions-count').text(data.sessions_count);
                     $('#sessions-hours').text(data.sessions_duration);
                 });
-
-            const rate = 3;
-            const minimum = 60;
-            const minimumStudents = minimum / rate;
-
-            $('#per-student-rate').text(rate);
-            $('#minimum-charge').text(minimum);
-            $('#cost').text(minimum);
-            $('#students-count').text(minimumStudents);
-
-            $('#students').on('input change', function () {    
-                const students = $(this).val();
-                const cost = students * rate;
-                const payable = cost < minimum ? minimum : cost;
-
-                $('#students-count').text(students);
-                $('#cost').text(payable);
-            })
         })
     </script>
 </body>
