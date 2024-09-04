@@ -346,11 +346,11 @@
 
     <div
         x-data='{
-            rate: 3,
-            minimumFee: 60,
+            rate: 2,
+            minimumFee: 50,
             minimumWage: 1500,
-            studentsCount: 20,
-            registrationFee: 300,
+            studentsCount: 25,
+            registrationFee: 200,
             get cost() {
                 let cost = this.studentsCount * this.rate;
                 return (cost < this.minimumFee) ? this.minimumFee : cost;
@@ -415,7 +415,7 @@
                             </div>
                             <div class="d-flex align-items-center">
                                 <h6 class="text-muted mr-1">RM</h6>
-                                <h3 class="h1 font-weight-bold" x-text="cost">60</h3>
+                                <h3 class="h1 font-weight-bold" x-text="cost.toLocaleString('en-US')">60</h3>
                                 <h5 class="ml-2">/ bulan</h5>
                             </div>
                         </div>
@@ -434,9 +434,9 @@
                             x-show.important="(minimumWage - cost) > 0"
                             class="mt-4 d-flex align-items-center justify-content-center flex-wrap">
                             <h3 class="my-0 mr-1 mb-1 mb-md-0 text-nowrap">
-                                💸Jimat <strong x-text="'RM' + (minimumWage - cost)"></strong>
+                                💸Jimat <strong x-text="'RM' + (minimumWage - cost).toLocaleString('en-US')"></strong>
                             </h3>
-                            <span class="text-nowrap"> / <span x-text="minimumWage">1500</span> (gaji staf)</span>
+                            <span class="text-nowrap"> / <span x-text="minimumWage.toLocaleString('en-US')">1500</span> (gaji staf)</span>
                         </div>
 
                     </div>
