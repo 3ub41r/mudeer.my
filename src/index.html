@@ -358,11 +358,11 @@
 
     <div
         x-data='{
-            rate: 2,
-            minimumFee: 50,
+            rate: 3,
+            minimumFee: 60,
             minimumWage: 1500,
-            studentsCount: 25,
-            registrationFee: 200,
+            studentsCount: 20,
+            registrationFee: 300,
             get cost() {
                 let cost = this.studentsCount * this.rate;
                 return (cost < this.minimumFee) ? this.minimumFee : cost;
